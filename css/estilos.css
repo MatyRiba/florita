@@ -25,6 +25,16 @@
     transform: scale(1.1);
 }
 
+.nav-link{
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+}
+
+.nav-link:hover{
+    -webkit-transform: 1s linear;
+    transform: scale(1.1);
+}
+
 /*
 header{
     max-width: 100%;
@@ -114,7 +124,7 @@ main{
     color: white;
     font-size: 18px;
     text-decoration: none;
-    padding: 8px;
+    padding: 5px;;
     font-family: 'poppins';
 }
 
@@ -147,7 +157,7 @@ article p{
 /*FOOTER CON BOOSTRAP*/
 footer{
     display: flex;
-    background-color: white;
+    background-color: rgb(245, 235, 243);;
     height: 160px;
     justify-content: center;
     align-items: center;
