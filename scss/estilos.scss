@@ -1,0 +1,160 @@
+@import 'variables';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#logo img{
+    margin-left: 20px;
+}
+
+#menu a{
+    font-size: $tamaño-fuente1;
+    font-weight: bold;
+    color: black;
+    font-family: $fuente-principal;
+} 
+
+
+.nav-link{
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+
+    &:hover{
+        -webkit-transform: 1s linear;
+        transform: scale(1.1);
+    }
+}
+
+main{
+    background-color: $color-principal;
+}
+
+#galeria{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-left: 25px;
+    gap: 10px;
+    background-color: $color-principal;
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+    img{
+        width: 350px;
+        height: 200px;
+        margin-bottom: 15px;
+    }
+    &:hover{
+    -webkit-transform: 1s linear;
+    transform: scale(1.1);
+    }
+    div h1{
+        font-family: 'poppins';
+        font-weight: 800;
+        font-size: 24px;
+    }
+    div a{
+    background-color: black;
+    color: white;
+    font-size: $tamaño-fuente1;
+    text-decoration: none;
+    padding: 5px;
+    font-family: $fuente-principal;
+    }
+}
+
+
+.card img{
+    width: 500px;
+    height: 500px;
+}
+
+.card-title{
+    font-size: $tamaño-fuente1;
+    color: rgb(192, 137, 185);
+}
+
+
+/*FOOTER CON BOOSTRAP*/
+footer{
+    display: flex;
+    background-color: $color-principal;
+    height: 160px;
+    justify-content: center;
+    align-items: center;
+
+    ul{
+        display: flex;
+        list-style: none;
+        gap: 5px;
+        font-size: $tamaño-fuente1;
+    }
+
+    li a{
+        text-decoration: none;
+    }
+}
+
+.redes{
+    width: 28px;
+    margin: 5px;
+    margin-right: 12px;
+}
+
+.florita{
+    font-size: $tamaño-fuente1;
+}
+/*FIN FOOTER CON BOOSTRAP*/
+
+
+
+/*FORMULARIO*/
+.form{
+    background-color: beige;
+}
+
+.registro{
+    width: 400px;
+    background-color: #7c6a86;
+    padding: 30px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: $fuente-principal;
+    border-radius: 4px;
+}
+
+.datos{
+    background: #ffffff;
+    color: black;
+    padding: 10px;
+    border-radius: 4px;
+    border: solid 1px beige;
+    margin-bottom: 8px;
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: bold;
+} 
+/*FIN FORMULARIO*/
+
+@media (max-width: 576px){
+    #galeria{
+        display: grid;
+        grid-template-columns: 1fr;
+}
+}
+
+@media (min-width: 577px){
+    #galeria{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 992px){
+    #galeria{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
