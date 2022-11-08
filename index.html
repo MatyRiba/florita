@@ -15,115 +15,145 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Roboto&display=swap" > 
     <title>Florita-inicio</title>
 </head>
+
 <body>
 
-<header> <!--HEADER CON BOOSTRAP-->
-    <nav class="navbar navbar-expand-md bg-light p-3" id="menu">
+<header>              <!--HEADER CON BOOSTRAP-->
+    <nav class="navbar navbar-expand-md navbar-light bg-light p-3" id="menu">
         <div class="container-fluid">
             <img class="navbar-brand" src="./assets/logo/LaFlorita2 (1).jpg" width="150px">
-            <button class="navbar-toggler"type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
-                </li>
-                </li class="nav-item">
-                <a class="nav-link" href="./pages/decoracion.html">Decoracion</a>
-                </li>
-                </li class="nav-item">
-                <a class="nav-link" href="./pages/producto.html">Producto</a>
-                </li>
-                </li class="nav-item">
-                <a class="nav-link" href="./pages/contacto.html">Contacto</a>
-                </li>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 m-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./pages/decoracion.html">Decoracion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./pages/producto.html">Producto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./pages/contacto.html">Contacto</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
-</header> <!--FIN HEADER CON BOOSTRAP-->
+</header>               <!-- FIN HEADER CON BOOSTRAP-->
 
-    <main> <!--contenido principal-->
-
-        <section>  <!--CARROUSEL BOOSTRAP-->
-            <div id="carouselExampleSlidesOnly" class="carousel slide mb-3  d-none d-sm-block" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carrousel-item active" data-bs-interval="3000">
-                    <img src="./assets/imagenes/flores-secas.jpg.webp"  class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item" data-bs-interval="3000">
-                    <img src="./assets/imagenes/flores1.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item" data-bs-interval="3000">
-                    <img src="http://picsum.photos/1600/400" class="d-block w-100" alt="...">
-                </div>
+<main>
+    <section>      <!--CAROUSEL BOOSTRAP-->
+        <div id="carouselExampleControls" class="carousel slide mb-3" data-bs-ride="carousel">
+            <div class="carousel-inner">
+        <div class="carousel-item active">
+                <img src="./assets/imagenes/canasta.jpg" class="d-block w-100" alt="...">
             </div>
+            <div class="carousel-item">
+                <img src="./assets/imagenes/ceramica4.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./assets/imagenes/centrosDemesa4.jpg" class="d-block w-100" alt="...">
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
         </div>
-        </section> <!--FIN CARROUSEL BOOSTRAP-->
-        
-        <section id="galeria">
-            <div>
-                <h1>Para regalar</h1>
-                <img src="./assets/imagenes/oie_113852BeUac9SN.jpg" alt="jarron de vidrio con ramo de flores secas">
-                <a href="">Ver mas</a>
+    </section>             <!--FIN CAROUSEL BOOSTRAP-->
+
+    <section class="container-fluid d-flex flex-wrap gap-4">
+        <div class="card row col-lg-3 col-md-6 col-sm-12">
+            <div class="col">
+                <h3 class="card-title fs-2 m-auto">Para regalar</h3>
+                <img class="card-img-top img-fluid pt-3 py-2 mt-1" src="./assets/imagenes/Bouquet-fleurs-sechees-orange-et-rose.jpg" alt="foto de ramo de flores secas">
+                <div class="card-body">
+                    <a href="#" class="btn- btn-secondary p-2 text-decoration-none text-xl">ver mas</a>
+                </div>
+            </div>        
+        </div>
+        <div class="card row col-lg-3 col-md-6 col-sm-12">
+            <div class="col">
+                <h3 class="card-title fs-2 m-auto">Flores secas</h3>
+                <img class="card-img-top img-fluid pt-3 py-2 mt-1" src="./assets/imagenes/cardoAzul.jpg" alt="foto de guirnaldas de flores secas">
+                <div class="card-body">
+                    <a href="#" class="btn- btn-secondary p-2 text-decoration-none">ver mas</a>
+                </div>
+            </div>        
+        </div>
+        <div class="card row col-lg-3 col-md-6 col-sm-12">
+            <div class="col">
+                <h3 class="card-title fs-2 m-auto">Decoracion</h3>
+                <img class="card-img-top img-fluid pt-3 py-2 mt-1" src="./assets/imagenes/Vase-ceramique-kaki.jpg" alt="foto de cardo azul">
+                <div class="card-body">
+                    <a href="#" class="btn- btn-secondary p-2 text-decoration-none text-xl">ver mas</a>
+                </div>
+            </div>        
+        </div>
+        <div class="card row col-lg-3 col-md-6 col-sm-12">
+            <div class="col">
+                <h3 class="card-title fs-2 m-auto">Eventos</h3>
+                <img class="card-img-top img-fluid pt-3 py-2 mt-1" src="./assets/imagenes/centrosDemesa1.jpg" alt="foto de mini bouquet de flores secas">
+                <div class="card-body">
+                    <a href="#" class="btn- btn-secondary p-2 text-decoration-none text-xl">ver mas</a>
+                </div>
             </div>
-            <div>
-                <h1>Flores secas</h1>
-                <img src="./assets/imagenes/flores-secas-bricolaje.jpg" alt="flores secas">
-                <a href="">Ver mas</a>
-            </div>
-            <div>
-                <h1>Decoracion</h1>
-                <img src="./assets/imagenes/tom-crew-iUFS1GCpEbk-unsplash.jpg" alt="tres jarrones de ceramica blancos">
-                <a href="">Ver mas</a>
-            </div>
-            <div>
-                <h1>Eventos</h1>
-                <img src="./assets/imagenes/jeremy-wong-weddings-K41SGnGKxVk-unsplash.jpg" alt="dos sillas con arreglos florarles">
-                <a href="">Ver mas</a>
-            </div>
-        </section>
-        
-        <article class="card mb-3 mt-2 p-3">
+        </div>       
+    </section>
+
+    <section>
+        <div class="card mb-3 mt-3">
             <div class="row g-0">
             <div class="col-md-4">
-                <img src="./assets/imagenes/Foto-Juli.jpg" class="img-fluid rounded-start mt-4 justify-content-center" alt="foto de julia">
+                <img src="./assets/imagenes/sobre mi foto.png" class="img-fluid rounded-start mt-3 mx-2" alt="foto de julia">
             </div>
             <div class="col-md-8">
                 <div class="card-body mt-5">
-                <h2 class="card-title">Soy Julia, fundadora y diseñadora de La Florita</h2>
-                <p class="card-text mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae atque minima autem suscipit libero blanditiis qui, impedit optio vel quae, reprehenderit provident sapiente accusantium similique, nesciunt deleniti? Enim, dolor modi obcaecati minus fuga, aspernatur atque mollitia quo earum alias vel nulla aut consequatur. Labore pariatur dolorem cum possimus? Magnam sapiente, amet, optio quidem voluptatum rerum molestias quasi incidunt sunt porro vel iste, distinctio fugiat cupiditate saepe alias dolor. Incidunt, quasi.</p>
+                <h5 class="card-title mx-2">Soy Julia, fundadora de La Florita</h5>
+                <p class="card-text mx-2 fs-5" >Soy diseñadora y decoradora, y comencé en el mundo de las flores poco a poco, interesandome por la botánica, luego descubrí el mundo de las flores secas y me enamoró. Este proyecto surgió de forma natural, así como el deseo de impregnar el entorno de nuestros clientes de flores y el espíritu que tengo por esta pasión. Así fue como surgió este proyecto. <br><br>
+                    
+                
+                Me parece fundamental plantear este trabajo como una iniciativa positiva orientada a la concienciación de un consumo más responsable mediante la creación de ramos no perecederos, más duraderos. Sobre todo, querer promover un producto natural, unos ramos exclusivos que iviten a llenar el hogar de pequeños detalles de armonia y color.</p>
                 </div>
             </div>
             </div>
-        </article>
-
+        </div>
+    </section>
+        
     </main> <!--Fin del contenido principal-->
 
-    <footer> <!--FOOTER CON BOOSTRAP-->
-        <div class="container">
+    <footer>                  <!--FOOTER CON BOOSTRAP-->
+        <div class="container text-center">
             <div class="row">
-                <div class="col-sm-6">
-                    <p>Copyright 2021. La Florita Slow Home/Todos los derechos reservados</p>
+                <div class="col-lg-4 col-sm-6">
+                    <p>Copyright 2021. La Florita Slow Home</p>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-lg-4 col-sm-6">
                     <p class="florita">La Florita. Slow Home</p>
                 </div>
-                <div class="col-sm-2">
+                <div class="col-lg-4 col-sm-12 d-flex justify-content-center">
                     <ul>
-                        <li><a href=""></a><img class="redes" src="./assets/imagenes/instagram.png" alt="logo de instagram"></li>
-                        <li><a href=""></a><img class="redes" src="./assets/imagenes/facebook.png" alt="logo de facebook"></li>
-                        <li><a href=""></a><img class="redes" src="./assets/imagenes/pinterest.png" alt="logo de pinterest"></li>
-                        <li><a href=""></a><img class="redes" src="./assets/imagenes/twitter.png" alt="logo de twitter"></li>
+                        <li><img class="redes" src="./assets/imagenes/instagram.png" alt=""></li>
+                        <li><img class="redes" src="./assets/imagenes/facebook.png" alt=""></li>
+                        <li><img class="redes" src="./assets/imagenes/pinterest.png" alt=""></li>
+                        <li><img class="redes" src="./assets/imagenes/whatsapp.png" alt=""></li>
                     </ul>
                 </div>
             </div>
         </div>
-    </footer> <!--FIN DE FOOTER CON BOOSTRAP-->
+    </footer>      
+                            <!--FIN DE FOOTER CON BOOSTRAP-->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
